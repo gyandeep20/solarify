@@ -250,9 +250,10 @@ const areaChartOptions = {
 const areaChartOptions2 = {
   series: [
     {
-      name: "Purchase Orders",
-      data: [31, 40, 28, 51, 42, 109, 100],
+      name: "Temperature",
+      data: [30, 28, 35, 42, 19, 15],
     },
+    
   ],
   chart: {
     type: "area",
@@ -263,8 +264,8 @@ const areaChartOptions2 = {
       show: false,
     },
   },
-  colors: ["#00ab57"],
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+  colors: ["#d50000", "#d50000"],
+  labels: ["5", "10", "15", "20", "25", "30", "35"],
   dataLabels: {
     enabled: false,
   },
@@ -325,7 +326,6 @@ const areaChartOptions2 = {
   yaxis: [
     {
       title: {
-        text: "Purchase Orders",
         style: {
           color: "#f5f7ff",
         },
@@ -338,8 +338,97 @@ const areaChartOptions2 = {
     },
     {
       opposite: true,
+    },
+  ],
+  tooltip: {
+    shared: true,
+    intersect: false,
+    theme: "dark",
+  },
+};
+
+
+
+// AREA CHART 3
+const areaChartOptions3 = {
+  series: [
+    {
+      name: "Humidity",
+      data: [30, 28, 35, 42, 19, 15],
+    },
+    
+  ],
+  chart: {
+    type: "area",
+    background: "transparent",
+    height: 350,
+    stacked: false,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: ["#00ab09", "#d58870"],
+  labels: ["5", "10", "15", "20", "25", "30", "35"],
+  dataLabels: {
+    enabled: false,
+  },
+  fill: {
+    gradient: {
+      opacityFrom: 0.4,
+      opacityTo: 0.1,
+      shadeIntensity: 1,
+      stops: [0, 100],
+      type: "vertical",
+    },
+    type: "gradient",
+  },
+  grid: {
+    borderColor: "#55596e",
+    yaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+  },
+  legend: {
+    labels: {
+      colors: "#f5f7ff",
+    },
+    show: true,
+    position: "top",
+  },
+  markers: {
+    size: 6,
+    strokeColors: "#1b2635",
+    strokeWidth: 3,
+  },
+  stroke: {
+    curve: "smooth",
+  },
+  xaxis: {
+    axisBorder: {
+      color: "#55596e",
+      show: true,
+    },
+    axisTicks: {
+      color: "#55596e",
+      show: true,
+    },
+    labels: {
+      offsetY: 5,
+      style: {
+        colors: "#f5f7ff",
+      },
+    },
+  },
+  yaxis: [
+    {
       title: {
-        text: "Sales Orders",
         style: {
           color: "#f5f7ff",
         },
@@ -350,6 +439,9 @@ const areaChartOptions2 = {
         },
       },
     },
+    {
+      opposite: true,
+    },
   ],
   tooltip: {
     shared: true,
@@ -357,6 +449,212 @@ const areaChartOptions2 = {
     theme: "dark",
   },
 };
+
+
+
+// AREA CHART 4
+const areaChartOptions4 = {
+  series: [
+    {
+      name: "Current",
+      data: [3, 8, 5, 4, 19, 15],
+    },
+    
+  ],
+  chart: {
+    type: "area",
+    background: "transparent",
+    height: 350,
+    stacked: false,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: ["#00ab97", "#d53499"],
+  labels: ["5", "10", "15", "20", "25", "30", "35"],
+  dataLabels: {
+    enabled: false,
+  },
+  fill: {
+    gradient: {
+      opacityFrom: 0.4,
+      opacityTo: 0.1,
+      shadeIntensity: 1,
+      stops: [0, 100],
+      type: "vertical",
+    },
+    type: "gradient",
+  },
+  grid: {
+    borderColor: "#55596e",
+    yaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+  },
+  legend: {
+    labels: {
+      colors: "#f5f7ff",
+    },
+    show: true,
+    position: "top",
+  },
+  markers: {
+    size: 6,
+    strokeColors: "#1b2635",
+    strokeWidth: 3,
+  },
+  stroke: {
+    curve: "smooth",
+  },
+  xaxis: {
+    axisBorder: {
+      color: "#55596e",
+      show: true,
+    },
+    axisTicks: {
+      color: "#55596e",
+      show: true,
+    },
+    labels: {
+      offsetY: 5,
+      style: {
+        colors: "#f5f7ff",
+      },
+    },
+  },
+  yaxis: [
+    {
+      title: {
+        style: {
+          color: "#f5f7ff",
+        },
+      },
+      labels: {
+        style: {
+          colors: ["#f5f7ff"],
+        },
+      },
+    },
+    {
+      opposite: true,
+    },
+  ],
+  tooltip: {
+    shared: true,
+    intersect: false,
+    theme: "dark",
+  },
+};
+
+
+// AREA CHART 5
+const areaChartOptions5 = {
+  series: [
+    {
+      name: "Voltage",
+      data: [30, 28, 35, 42, 19, 15],
+    },
+    
+  ],
+  chart: {
+    type: "area",
+    background: "transparent",
+    height: 350,
+    stacked: false,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: ["#00ab97", "#d30458"],
+  labels: ["5", "10", "15", "20", "25", "30", "35"],
+  dataLabels: {
+    enabled: false,
+  },
+  fill: {
+    gradient: {
+      opacityFrom: 0.4,
+      opacityTo: 0.1,
+      shadeIntensity: 1,
+      stops: [0, 100],
+      type: "vertical",
+    },
+    type: "gradient",
+  },
+  grid: {
+    borderColor: "#55596e",
+    yaxis: {
+      lines: {
+        show: true,
+      },
+    },
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
+  },
+  legend: {
+    labels: {
+      colors: "#f5f7ff",
+    },
+    show: true,
+    position: "top",
+  },
+  markers: {
+    size: 6,
+    strokeColors: "#1b2635",
+    strokeWidth: 3,
+  },
+  stroke: {
+    curve: "smooth",
+  },
+  xaxis: {
+    axisBorder: {
+      color: "#55596e",
+      show: true,
+    },
+    axisTicks: {
+      color: "#55596e",
+      show: true,
+    },
+    labels: {
+      offsetY: 5,
+      style: {
+        colors: "#f5f7ff",
+      },
+    },
+  },
+  yaxis: [
+    {
+      title: {
+        style: {
+          color: "#f5f7ff",
+        },
+      },
+      labels: {
+        style: {
+          colors: ["#f5f7ff"],
+        },
+      },
+    },
+    {
+      opposite: true,
+    },
+  ],
+  tooltip: {
+    shared: true,
+    intersect: false,
+    theme: "dark",
+  },
+};
+
 
 const areaChart = new ApexCharts(
   document.querySelector("#area-chart"),
@@ -366,18 +664,18 @@ areaChart.render();
 
 const areaChart2 = new ApexCharts(
   document.querySelector("#area-chart2"),
-  areaChartOptions2
+  areaChartOptions3
 );
 areaChart2.render();
 
 const areaChart3 = new ApexCharts(
   document.querySelector("#area-chart3"),
-  areaChartOptions2
+  areaChartOptions4
 );
 areaChart3.render();
 
 const areaChart4 = new ApexCharts(
   document.querySelector("#area-chart4"),
-  areaChartOptions2
+  areaChartOptions5
 );
 areaChart4.render();
