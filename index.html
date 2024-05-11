@@ -12,7 +12,7 @@
     <div id="sensorData"></div>
 
     <script>
-        const client = new Paho.MQTT.Client("192.168.76.158", 1883, "clientId");
+        const client = new Paho.MQTT.Client("152.59.152.165", 1883, "clientId");
 
         client.onConnectionLost = (responseObject) => {
             if (responseObject.errorCode !== 0) {
